@@ -39,8 +39,8 @@ class EncrypterExtension extends Twig_Extension
     public function getFilters()
     {
         return array(
-            'encrypt' => new Twig_SimpleFilter($this, 'encryptFilter'),
-            'decrypt' => new Twig_SimpleFilter($this, 'decryptFilter')
+            'encrypt' => new Twig_SimpleFilter('encryptFilter', array($this, 'encryptFilter')),
+            'decrypt' => new Twig_SimpleFilter('decryptFilter', array($this, 'decryptFilter')),
         );
     }
 
