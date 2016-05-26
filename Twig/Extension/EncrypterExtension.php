@@ -3,7 +3,7 @@
 namespace Pierrre\EncrypterBundle\Twig\Extension;
 
 use \Twig_Extension;
-use \Twig_Filter_Method;
+use \Twig_SimpleFilter;
 
 use Pierrre\EncrypterBundle\Util\EncrypterManager;
 
@@ -39,8 +39,8 @@ class EncrypterExtension extends Twig_Extension
     public function getFilters()
     {
         return array(
-            'encrypt' => new Twig_Filter_Method($this, 'encryptFilter'),
-            'decrypt' => new Twig_Filter_Method($this, 'decryptFilter')
+            'encrypt' => new Twig_SimpleFilter($this, 'encryptFilter'),
+            'decrypt' => new Twig_SimpleFilter($this, 'decryptFilter')
         );
     }
 
