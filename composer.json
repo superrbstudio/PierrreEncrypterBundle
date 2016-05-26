@@ -1,9 +1,9 @@
 {
-    "name": "pierrre/encrypter-bundle",
+    "name": "superrb/encrypter-bundle",
     "type": "symfony-bundle",
     "description": "Provides an easy to use encryption service for Symfony2",
     "keywords": ["encryption"],
-    "homepage": "https://github.com/pierrre/PierrreEncrypterBundle",
+    "homepage": "https://github.com/superrbstudio/PierrreEncrypterBundle",
     "authors": [
         {
             "name": "Pierre Durand",
